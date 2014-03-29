@@ -42,7 +42,7 @@ int main(int argc, char* argv[]){
 	
 	std::size_t pos = 0;
 	while((pos = data.find('\0', pos)) != std::string::npos){
-		data.replace(pos, 1, "¥n");
+		data.replace(pos, 1, "\n");
 	}
 	
 	std::string oldfile = argv[1];
